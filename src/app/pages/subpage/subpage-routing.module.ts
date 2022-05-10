@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SubpagePage
+  },
+  {
+    path: 'subpage',
+    loadChildren: () => import('./subpage.module').then( m => m.SubpagePageModule)
   }
 ];
 

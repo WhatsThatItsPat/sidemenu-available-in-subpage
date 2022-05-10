@@ -19,6 +19,10 @@ const routes: Routes = [
           {
             path: 'session/:sessionId',
             loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
+          },
+          {
+            path: 'subpage',
+            loadChildren: () => import('../subpage/subpage.module').then( m => m.SubpagePageModule)
           }
         ]
       },
